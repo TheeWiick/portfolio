@@ -1,0 +1,129 @@
+:root{
+    --bg-color: #101922;
+    --text-color: #ffffff;
+    --text-color2: #758295;
+    --text-light: #898c91;
+    --btn-color: #0d7ff2;
+    --btn-light: #4098ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* HEADER */
+
+.portfolio__header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.portfolio__header .header__title {
+    margin-left: 2rem;
+    cursor: default;
+}
+
+.portfolio__header .header__social {
+    margin-right: 2rem;
+}
+
+.portfolio__header .nav__list {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+
+.portfolio__header .item__link {
+    text-decoration: none;
+    color: var(--text-color2);
+}
+
+.portfolio__header .item__link:hover{
+    color: var(--text-light);
+}
+
+.portfolio__header .social__link {
+    text-decoration: none;
+    color: var(--text-color2);
+}
+
+.portfolio__header .social__link:hover{
+    color: var(--text-light);
+}
+
+.portfolio__header .social__github {
+    margin-right: 1rem;
+}
+
+/* MAIN */
+
+.main__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__image {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__main .section__title{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio__main .section__text {
+    color: var(--text-color2);
+    font-size: 1.6rem;
+}
+
+.portfolio__main .main__btn {
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    padding: 0.8rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms linear;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.portfolio__main .main__btn:hover {
+    background-color: var(--btn-light);
+}
+
+.portfolio__main .section__img {
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+
+
