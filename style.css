@@ -364,35 +364,10 @@ body {
 
 }
 
+
+
+
 @media (max-width: 1300px) {
-
-    /* Projects*/
-    .section__projects {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-
-    .article__title{
-        font-size: 1.5rem;
-    }
-
-    /* Skills */
-    .skills__grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-
-    .skill__card {
-        padding: 1.2rem 1.5rem;
-    }
-
-    .skill__span {
-        font-size: 1.5rem;
-    }
-}
-
-
-@media (max-width: 1024px) {
 
     /* About */
     .portfolio__main .section__img {
@@ -407,6 +382,11 @@ body {
     /* Projects */
     .section__projects {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .article__title{
+        font-size: 1.5rem;
     }
 
     .article__img {
@@ -416,10 +396,15 @@ body {
 
     /* Skills */
     .skills__grid {
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
 
     .skill__card {
-        padding: 1.5rem 2rem;
+        padding: 1.2rem 1.5rem;
+    }
+
+    .skill__span {
+        font-size: 1.5rem;
     }
 }
