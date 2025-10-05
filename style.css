@@ -329,9 +329,10 @@ body {
     }
 
     .skill__card {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
         align-items: center;
-        justify-content: center;
         gap: 0.5rem;
         background-color: var(--card-color);
         color: var(--text-color);
@@ -340,7 +341,6 @@ body {
         box-shadow: 0 4px 12px var(--shadow-color);
         width: 90%;
         min-height: 60px;
-        flex-shrink: 0;
     }
 
     .skill__card svg {
@@ -364,9 +364,6 @@ body {
 
 }
 
-
-
-
 @media (max-width: 1300px) {
 
     /* About */
@@ -385,7 +382,7 @@ body {
         gap: 1.5rem;
     }
 
-    .article__title{
+    .article__title {
         font-size: 1.5rem;
     }
 
