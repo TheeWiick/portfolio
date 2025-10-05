@@ -4,6 +4,7 @@
     --bg-color: #101922;
     --card-color: #16202e;
     --shadow-color: #00000056;
+    --line-color: #1e293b;
     --text-color: #ffffff;
     --text-color2: #94a3b8;
     --text-light: #adb5bf;
@@ -224,6 +225,8 @@ body {
 .portfolio__footer{
     display: grid;
     text-align: center;
+    padding: 3rem;
+    border-top: 1px solid var(--line-color);
 }
 
 .footer__social .social__link{
@@ -239,4 +242,10 @@ body {
 .footer__icon{
     height: 2rem;
     width: 2rem;
+}
+
+.footer__small{
+    color: var(--text-color2);
+    padding-top: 2rem;
+    font-size: 1rem;
 }
