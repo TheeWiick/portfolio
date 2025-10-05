@@ -8,17 +8,15 @@
         content="Soy JaviDev, desarrollador web especializado en front-end con experiencia en HTML, CSS, JavaScript y SASS. Actualmente amplío mis habilidades en TypeScript y Angular para crear aplicaciones modernas, atractivas y escalables." />
 
     <link rel="icon" href="./img/favicon.svg">
-
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./style.css">
 
     <title>Portfolio - JaviDev</title>
 </head>
 
 <body>
+    <!-- ================= HEADER ================= -->
     <header class="portfolio__header">
-
         <h1 class="header__title">JaviDev</h1>
 
         <nav class="header__nav">
@@ -29,12 +27,11 @@
             </ul>
         </nav>
 
-
         <div class="header__social">
             <a class="social__link" href="https://github.com/TheeWiick" target="_blank">
                 <svg class="social__github" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                    stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path
                         d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
@@ -44,7 +41,7 @@
             <a class="social__link" href="https://www.linkedin.com/in/javiidev" target="_blank">
                 <svg class="social__linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                    stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M8 11v5" />
                     <path d="M8 8v.01" />
@@ -53,51 +50,47 @@
                     <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
                 </svg>
             </a>
-
         </div>
-
     </header>
 
+    <!-- ================= MAIN ================= -->
     <main class="portfolio__main">
 
+        <!-- ================= ABOUT ================= -->
         <section id="about" class="main__section section__about">
-
             <div class="about__content">
                 <h2 class="section__title">Acerca de mi</h2>
-                <p class="section__text">Soy un desarrollador web apasionado por crear experiencias digitales atractivas
-                    y funcionales. Con una base sólida en HTML, CSS, JavaScript y SASS, me esfuerzo por mantenerme
-                    actualizado con las últimas tecnologías y tendencias del desarrollo web. Actualmente, estoy
-                    ampliando mis habilidades con TypeScript y Angular para construir aplicaciones más robustas y
-                    escalables. Con experiencia en HTML, CSS, JavaScript y SASS, y en aprendizaje de TypeScript y
-                    Angular.</p>
+                <p class="section__text">
+                    Soy un desarrollador web apasionado por crear experiencias digitales atractivas y funcionales.
+                    Con una base sólida en HTML, CSS, JavaScript y SASS, me esfuerzo por mantenerme actualizado con
+                    las últimas tecnologías y tendencias del desarrollo web. Actualmente, estoy ampliando mis
+                    habilidades con TypeScript y Angular para construir aplicaciones más robustas y escalables.
+                </p>
                 <a href="#projects" class="main__btn">Ver Proyectos</a>
             </div>
 
             <div class="about__image">
                 <img class="section__img" src="./img/javidev.webp" alt="Imagen de JaviDev">
             </div>
-
         </section>
 
-
+        <!-- ================= PROJECTS ================= -->
         <section id="projects" class="main__section section__projects">
-
             <h2 class="section__title">Proyectos</h2>
 
             <article class="main__article">
                 <img class="article__img" src="./img/projectimg.webp" alt="">
                 <div class="article__div">
                     <h3 class="article__title">Proyecto 1</h3>
-                    <p class="article__text">Descripción breve del Proyecto 1</p>
+                    <p class="article__text">Proximamente...</p>
                 </div>
-
             </article>
 
             <article class="main__article">
                 <img class="article__img" src="./img/projectimg.webp" alt="">
                 <div class="article__div">
                     <h3 class="article__title">Proyecto 2</h3>
-                    <p class="article__text">Descripción breve del Proyecto 2</p>
+                    <p class="article__text">Proximamente...</p>
                 </div>
             </article>
 
@@ -105,20 +98,21 @@
                 <img class="article__img" src="./img/projectimg.webp" alt="">
                 <div class="article__div">
                     <h3 class="article__title">Proyecto 3</h3>
-                    <p class="article__text">Descripción breve del Proyecto 3</p>
+                    <p class="article__text">Proximamente...</p>
                 </div>
             </article>
-
         </section>
 
+        <!-- ================= SKILLS ================= -->
         <section id="skills" class="main__section section__skills">
             <h2 class="section__title">Habilidades</h2>
 
             <div class="skills__grid">
+                <!-- HTML -->
                 <div class="skill__card">
                     <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="#e5532d" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-html5">
+                        stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
                         <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
@@ -126,10 +120,11 @@
                     <span class="skill__span">HTML</span>
                 </div>
 
+                <!-- CSS -->
                 <div class="skill__card">
                     <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="#306af1" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-css3">
+                        stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
                         <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
@@ -137,10 +132,11 @@
                     <span class="skill__span">CSS</span>
                 </div>
 
+                <!-- SASS -->
                 <div class="skill__card">
                     <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="#cf6b9d" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-sass">
+                        stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path
                             d="M12 10.523c2.46 -.826 4 -.826 4 -2.155c0 -1.366 -1.347 -1.366 -2.735 -1.366c-1.91 0 -3.352 .49 -4.537 1.748c-.848 .902 -1.027 2.449 -.153 3.307c.973 .956 3.206 1.789 2.884 3.493c-.233 1.235 -1.469 1.823 -2.617 1.202c-.782 -.424 -.454 -1.746 .626 -2.512s2.822 -.992 4.1 -.24c.98 .575 1.046 1.724 .434 2.193" />
@@ -148,11 +144,11 @@
                     <span class="skill__span">SASS</span>
                 </div>
 
+                <!-- JavaScript -->
                 <div class="skill__card">
                     <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="#f0dc55" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript">
+                        stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
                         <path d="M7.5 8h3v8l-2 -1" />
@@ -162,15 +158,26 @@
                     <span class="skill__span">JavaScript</span>
                 </div>
 
+                <!-- TypeScript -->
                 <div class="skill__card">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#377cc8"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-typescript"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 17.5c.32 .32 .754 .5 1.207 .5h.543c.69 0 1.25 -.56 1.25 -1.25v-.25a1.5 1.5 0 0 0 -1.5 -1.5a1.5 1.5 0 0 1 -1.5 -1.5v-.25c0 -.69 .56 -1.25 1.25 -1.25h.543c.453 0 .887 .18 1.207 .5" /><path d="M9 12h4" /><path d="M11 12v6" /><path d="M21 19v-14a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2z" /></svg>
+                    <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#377cc8" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M15 17.5c.32 .32 .754 .5 1.207 .5h.543c.69 0 1.25 -.56 1.25 -1.25v-.25a1.5 1.5 0 0 0 -1.5 -1.5a1.5 1.5 0 0 1 -1.5 -1.5v-.25c0 -.69 .56 -1.25 1.25 -1.25h.543c.453 0 .887 .18 1.207 .5" />
+                        <path d="M9 12h4" />
+                        <path d="M11 12v6" />
+                        <path d="M21 19v-14a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2z" />
+                    </svg>
                     <span class="skill__span">TypeScript</span>
                 </div>
 
+                <!-- Angular -->
                 <div class="skill__card">
                     <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="#f4493c" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-angular">
+                        stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path
                             d="M5.428 17.245l6.076 3.471a1 1 0 0 0 .992 0l6.076 -3.471a1 1 0 0 0 .495 -.734l1.323 -9.704a1 1 0 0 0 -.658 -1.078l-7.4 -2.612a1 1 0 0 0 -.665 0l-7.399 2.613a1 1 0 0 0 -.658 1.078l1.323 9.704a1 1 0 0 0 .495 .734z" />
@@ -179,29 +186,27 @@
                     </svg>
                     <span class="skill__span">Angular</span>
                 </div>
+
             </div>
         </section>
 
-
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer class="portfolio__footer">
         <div class="footer__social">
-            <a class="social__link" href="https://github.com/TheeWiick" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+            <a class="social__link" href="https://github.com/TheeWiick" target="_blank" aria-label="GitHub">
+                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path
                         d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                 </svg>
             </a>
 
-            <a class="social__link" href="https://www.linkedin.com/in/javiidev" target="_blank" rel="noopener noreferrer"
-                aria-label="LinkedIn">
-                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+            <a class="social__link" href="https://www.linkedin.com/in/javiidev" target="_blank" aria-label="LinkedIn">
+                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M8 11v5" />
                     <path d="M8 8v.01" />
@@ -210,30 +215,9 @@
                     <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
                 </svg>
             </a>
-
-            <a class="social__link" href="mailto:javiimartinez05@gmail.com" aria-label="Email">
-                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                    <path d="M3 7l9 6l9 -6" />
-                </svg>
-            </a>
-
-            <a class="social__link" href="tel:+34633027687" aria-label="Teléfono">
-                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                </svg>
-            </a>
         </div>
         <small class="footer__small">&copy; 2025 JaviDev. Todos los derechos reservados.</small>
     </footer>
-
 </body>
 
 </html>
