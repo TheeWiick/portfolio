@@ -1,9 +1,12 @@
+/* GENERAL */
+
 :root {
     --bg-color: #101922;
     --card-color: #16202e;
+    --shadow-color: #00000056;
     --text-color: #ffffff;
-    --text-color2: #758295;
-    --text-light: #898c91;
+    --text-color2: #94a3b8;
+    --text-light: #adb5bf;
     --btn-color: #0d7ff2;
     --btn-light: #4098ef;
 }
@@ -13,6 +16,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Grotesk";
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -69,13 +76,15 @@ body {
 
 /* MAIN */
 
+/* SKILLS SECTION */
+
 .main__section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 8.5rem;
 }
 
 .about__content {
@@ -141,7 +150,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.article__img{
+.article__img {
     display: block;
     height: 100%;
     width: 35rem;
@@ -156,11 +165,78 @@ body {
 
 .main__article {
     cursor: pointer;
-    box-shadow: 5px 5px 15px 0px #00000065;
+    box-shadow: 5px 5px 15px 0px var(--shadow-color);
     border-radius: 2rem;
     transition: transform 0.3s ease;
 }
 
 .main__article:hover {
     transform: translateY(-5px);
+}
+
+/* SKILLS SECTION */
+
+.section__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+.skills__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.skill__card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: 500;
+    cursor: default;
+}
+
+.skill__card:hover {
+    transform: translateY(-5px);
+}
+
+.skill__card svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--text-color);
+}
+
+.skill__span{
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+
+.portfolio__footer{
+    display: grid;
+    text-align: center;
+}
+
+.footer__social .social__link{
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--text-color2);
+}
+
+.footer__social .social__link:hover{
+    color: var(--text-light);
+}
+
+.footer__icon{
+    height: 2rem;
+    width: 2rem;
 }
