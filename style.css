@@ -149,7 +149,7 @@ body {
 
 .section__projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 2rem;
     justify-items: center;
     text-align: center;
@@ -162,12 +162,14 @@ body {
 
 .article__img {
     display: block;
-    width: 35rem;
-    height: 100%;
+    width: 100%;
+    max-width: 35rem;
+    height: auto;
     border-radius: 2rem 2rem 0 0;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
+
 
 .article__div {
     background-color: var(--card-color);
