@@ -113,6 +113,11 @@ body {
     text-align: left;
 }
 
+.secction__link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .main__btn {
     background-color: var(--btn-color);
     color: var(--text-color);
@@ -160,12 +165,22 @@ body {
     width: 35rem;
     height: 100%;
     border-radius: 2rem 2rem 0 0;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .article__div {
     background-color: var(--card-color);
     padding: 1.5rem;
     border-radius: 0 0 2rem 2rem;
+}
+
+.article__title {
+    margin-bottom: 1rem;
+}
+
+.article__text{
+    color: re;
 }
 
 .main__article {
@@ -309,11 +324,6 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .article__img {
-        max-width: 320px;
-        width: 100%;
-    }
-
     .skills__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -368,10 +378,6 @@ body {
 
     .article__title {
         font-size: 1.5rem;
-    }
-
-    .article__img {
-        max-width: 400px;
     }
 
     .skills__grid {
