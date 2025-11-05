@@ -238,6 +238,8 @@ body {
     align-items: center;
     gap: 3rem;
     text-align: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
 }
 
 .skills__grid {
