@@ -186,6 +186,8 @@ body {
 }
 
 .main__article {
+    width: 100%;
+    max-width: 32rem;
     cursor: pointer;
     border-radius: 2rem;
     box-shadow: 5px 5px 15px var(--shadow-color);
