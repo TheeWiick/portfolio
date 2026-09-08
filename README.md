@@ -16,7 +16,7 @@ Tengo experiencia en **HTML, CSS, JavaScript y SASS**, **APIS**, y actualmente a
 ### 1. [To Do List](https://theewiick.github.io/To-Do-List)
 Aplicación web de lista de tareas con filtro, edición y tema claro/oscuro.
 
-### 2. [Weather App](https://theewiick.github.io/Weather-App)
+### 2. [Weather App](https://github.com/TheeWiick/Weather-App)
 Weather App con búsqueda de ciudad y visualización de condiciones climáticas.
 
 ### 3. Proyecto 3
