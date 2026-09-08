@@ -7,7 +7,7 @@ Bienvenido a mi **portfolio web**, una muestra de mis proyectos y habilidades co
 ## 🔹 Acerca de mí
 
 Soy un desarrollador web apasionado por crear experiencias digitales atractivas y funcionales.  
-Tengo experiencia en **HTML, CSS, JavaScript y SASS**, y actualmente amplío mis conocimientos en **TypeScript y Angular** para construir aplicaciones más modernas y escalables.
+Tengo experiencia en **HTML, CSS, JavaScript y SASS**, **APIS**, y actualmente amplío mis conocimientos en **TypeScript y Angular** para construir aplicaciones más modernas y escalables.
 
 ---
 
@@ -16,8 +16,8 @@ Tengo experiencia en **HTML, CSS, JavaScript y SASS**, y actualmente amplío mis
 ### 1. [To Do List](https://theewiick.github.io/To-Do-List)
 Aplicación web de lista de tareas con filtro, edición y tema claro/oscuro.
 
-### 2. Proyecto 2
-Próximamente…
+### 2. [Weather App](https://theewiick.github.io/Weather-App)
+Weather App con búsqueda de ciudad y visualización de condiciones climáticas.
 
 ### 3. Proyecto 3
 Próximamente…
@@ -30,6 +30,7 @@ Próximamente…
 - **JavaScript**
 - **TypeScript**
 - **Angular**
+- **APIS**
 
 ---
 
@@ -42,4 +43,4 @@ Próximamente…
 
 ---
 
-**© 2025 JaviDev. Todos los derechos reservados.**
+**© 2026 JaviDev. Todos los derechos reservados.**
