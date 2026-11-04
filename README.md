@@ -1,46 +1,46 @@
-# JaviDev - Portfolio Web
+# 🌐 Personal Frontend Portfolio
 
-Bienvenido a mi **portfolio web**, una muestra de mis proyectos y habilidades como desarrollador front-end. Aquí podrás conocer mi trabajo, explorar mis proyectos y descubrir las tecnologías que utilizo.
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3/SCSS](https://img.shields.io/badge/SCSS-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/React-%2320232A.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
----
+Sitio web personal y portafolio interactivo diseñado para presentar mis proyectos de desarrollo web, habilidades técnicas y trayectoria Frontend.
 
-## 🔹 Acerca de mí
-
-Soy un desarrollador web apasionado por crear experiencias digitales atractivas y funcionales.  
-Tengo experiencia en **HTML, CSS, JavaScript y SASS**, **APIS**, y actualmente amplío mis conocimientos en **TypeScript y Angular** para construir aplicaciones más modernas y escalables.
+[🌐 Visitar Portfolio](https://theewiick.github.io/portfolio/)
 
 ---
 
-## 💻 Proyectos Destacados
+## 🚀 Proyectos Destacados
 
-### 1. [To Do List](https://theewiick.github.io/To-Do-List)
-Aplicación web de lista de tareas con filtro, edición y tema claro/oscuro.
+### 1. 🌤️ [Weather App](https://github.com/TheeWiick/Weather-App)
+* **Descripción:** Aplicación meteorológica web para la consulta de tiempo en tiempo real mediante consumo de APIs externas.
+* **Stack:** HTML5, CSS3, JavaScript (ES6+), REST APIs.
+* **Demo:** [Ver Demo en vivo](https://theewiick.github.io/Weather-App/)
 
-### 2. [Weather App](https://theewiick.github.io/Weather-App/)
-Weather App con búsqueda de ciudad y visualización de condiciones climáticas.
+### 2. 🌍 [App-Lugares](https://github.com/TheeWiick/App-Lugares)
+* **Descripción:** Plataforma multipágina interactiva para el descubrimiento de destinos turísticos y experiencias de viaje.
+* **Stack:** HTML5, SCSS modular, JavaScript Vanilla.
+* **Demo:** [Ver Demo en vivo](https://theewiick.github.io/App-Lugares/)
 
-### 3. Proyecto 3
-Próximamente…
-
----
-
-## 🛠 Habilidades
-
-- **HTML, CSS, SASS**
-- **JavaScript**
-- **TypeScript**
-- **Angular**
-- **APIS**
+### 3. 📝 [To-Do List](https://github.com/TheeWiick/To-Do-List)
+* **Descripción:** Aplicación interactiva para la gestión eficiente de tareas con persistencia de datos local.
+* **Stack:** HTML5, CSS3, JavaScript (localStorage).
+* **Demo:** [Ver Demo en vivo](https://theewiick.github.io/To-Do-List/)
 
 ---
 
-## 🔗 Contacto
+## 🛠️ Habilidades y Tecnologías
 
-- [GitHub](https://github.com/TheeWiick)  
-- [LinkedIn](https://www.linkedin.com/in/javiidev)  
-- ✉️ Email: javiimartinez05@gmail.com  
-- 📞 Tel: +34 633 027 687  
+* **Frontend:** HTML5, CSS3, SCSS/Sass, JavaScript (ES6+), React, TypeScript, Tailwind CSS.
+* **Herramientas & Workflow:** Git, GitHub, Vite, VS Code, npm.
+* **Principios:** Maquetación Responsive, código limpio (DRY), optimización de UI/UX y consumo de APIs REST.
 
 ---
 
-**© 2026 JaviDev. Todos los derechos reservados.**
+## 📂 Estructura del Proyecto
+
+```text
+portfolio/
+├── css/                # Hojas de estilo y recursos de diseño
+├── js/                 # Lógica interactiva del portfolio
+├── assets/             # Capturas, logos e iconos
+├── index.html          # Interfaz principal del portfolio
+└── README.md           # Documentación del repositorio
