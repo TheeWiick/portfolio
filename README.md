@@ -13,17 +13,17 @@ Sitio web personal y portafolio interactivo diseñado para presentar mis proyect
 ### 1. 🌤️ [Weather App](https://github.com/TheeWiick/Weather-App)
 * **Descripción:** Aplicación meteorológica web para la consulta de tiempo en tiempo real mediante consumo de APIs externas.
 * **Stack:** HTML5, CSS3, JavaScript (ES6+), REST APIs.
-* **Demo:** [Ver Demo en vivo](https://theewiick.github.io/Weather-App/)
+* **Web:** [Visitar Web](https://theewiick.github.io/Weather-App/)
 
 ### 2. 🌍 [App-Lugares](https://github.com/TheeWiick/App-Lugares)
 * **Descripción:** Plataforma multipágina interactiva para el descubrimiento de destinos turísticos y experiencias de viaje.
 * **Stack:** HTML5, SCSS modular, JavaScript Vanilla.
-* **Demo:** [Ver Demo en vivo](https://theewiick.github.io/App-Lugares/)
+* **Web:** [Visitar Web](https://theewiick.github.io/App-Lugares/)
 
 ### 3. 📝 [To-Do List](https://github.com/TheeWiick/To-Do-List)
 * **Descripción:** Aplicación interactiva para la gestión eficiente de tareas con persistencia de datos local.
 * **Stack:** HTML5, CSS3, JavaScript (localStorage).
-* **Demo:** [Ver Demo en vivo](https://theewiick.github.io/To-Do-List/)
+* **Web:** [Visitar Web](https://theewiick.github.io/To-Do-List/)
 
 ---
 
