@@ -33,8 +33,8 @@ Sitio web personal y portafolio interactivo diseñado para presentar mis proyect
 
 ## 🛠️ Habilidades y Tecnologías
 
-* **Frontend:** HTML5, CSS3, SCSS/Sass, JavaScript (ES6+), React, TypeScript, Tailwind CSS.
-* **Herramientas & Workflow:** Git, GitHub, Vite, VS Code, npm.
+* **Frontend:** HTML5, CSS3, SCSS/Sass, JavaScript (ES6+).
+* **Herramientas & Workflow:** Git, GitHub, VS Code.
 * **Principios:** Maquetación Responsive, código limpio (DRY), optimización de UI/UX y consumo de APIs REST.
 
 ---
