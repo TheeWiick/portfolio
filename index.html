@@ -4,282 +4,586 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JaviDev — Desarrollador Web Front-End | Portfolio</title>
     <meta name="description"
-        content="Soy JaviDev, desarrollador web especializado en front-end con experiencia en HTML, CSS, JavaScript y SASS. Actualmente amplío mis habilidades en TypeScript y Angular para crear aplicaciones modernas, atractivas y escalables." />
+        content="Portfolio de Javier Martínez (JaviDev), desarrollador web front-end especializado en HTML, CSS, JavaScript y SASS. Proyectos con APIs, TypeScript, Angular y Astro." />
+    <meta name="author" content="Javier Martínez" />
+    <meta name="theme-color" content="#080d14" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://theewiick.github.io/portfolio/" />
 
-    <link rel="icon" href="./img/favicon.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <!-- Open Graph / Redes sociales -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="JaviDev" />
+    <meta property="og:title" content="JaviDev — Desarrollador Web Front-End" />
+    <meta property="og:description"
+        content="Portfolio de Javier Martínez: proyectos de desarrollo web con HTML, CSS, JavaScript, SASS, TypeScript, Angular y Astro." />
+    <meta property="og:url" content="https://theewiick.github.io/portfolio/" />
+    <meta property="og:image" content="https://theewiick.github.io/portfolio/img/og-image.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="JaviDev — Desarrollador Web Front-End" />
 
-    <title>Portfolio - JaviDev</title>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JaviDev — Desarrollador Web Front-End" />
+    <meta name="twitter:description"
+        content="Proyectos de desarrollo web con HTML, CSS, JavaScript, TypeScript, Angular y Astro." />
+    <meta name="twitter:image" content="https://theewiick.github.io/portfolio/img/og-image.webp" />
+
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Datos estructurados para buscadores -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Javier Martínez",
+        "alternateName": "JaviDev",
+        "jobTitle": "Desarrollador Web Front-End",
+        "url": "https://theewiick.github.io/portfolio/",
+        "image": "https://theewiick.github.io/portfolio/img/javidev.webp",
+        "email": "mailto:javiimartinez05@gmail.com",
+        "telephone": "+34 633 02 76 87",
+        "sameAs": [
+            "https://github.com/TheeWiick",
+            "https://www.linkedin.com/in/javiidev"
+        ],
+        "knowsAbout": [
+            "HTML", "CSS", "SASS", "JavaScript", "TypeScript", "Angular", "Astro", "REST APIs"
+        ]
+    }
+    </script>
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
     <!-- ================= HEADER ================= -->
-    <header class="portfolio__header">
-        <h1 class="header__title">JaviDev</h1>
-
-        <nav class="header__nav">
-            <ul class="nav__list">
-                <li class="list__item"><a class="item__link" href="#about">Acerca de mí</a></li>
-                <li class="list__item"><a class="item__link" href="#projects">Proyectos</a></li>
-                <li class="list__item"><a class="item__link" href="#cert">Certificados</a></li>
-                <li class="list__item"><a class="item__link" href="#skills">Habilidades</a></li>
-            </ul>
-        </nav>
-
-        <div class="header__social">
-            <a class="social__link" href="https://github.com/TheeWiick" target="_blank">
-                <svg class="social__github" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                </svg>
+    <header class="site-header" id="top">
+        <div class="container site-header__inner">
+            <a class="brand" href="#top" aria-label="JaviDev — volver al inicio">
+                <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+                <span class="brand__text">Javi<span class="brand__accent">Dev</span></span>
             </a>
 
-            <a class="social__link" href="https://www.linkedin.com/in/javiidev" target="_blank">
-                <svg class="social__linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M8 11v5" />
-                    <path d="M8 8v.01" />
-                    <path d="M12 16v-5" />
-                    <path d="M16 16v-3a2 2 0 1 0 -4 0" />
-                    <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
-                </svg>
-            </a>
+            <nav class="nav" id="nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#about">Sobre mí</a></li>
+                    <li><a class="nav__link" href="#projects">Proyectos</a></li>
+                    <li><a class="nav__link" href="#cert">Certificados</a></li>
+                    <li><a class="nav__link" href="#skills">Habilidades</a></li>
+                    <li><a class="nav__link nav__link--cta" href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="site-header__actions">
+                <a class="icon-link" href="https://github.com/TheeWiick" target="_blank" rel="noopener noreferrer"
+                    aria-label="Perfil de GitHub de JaviDev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                </a>
+                <a class="icon-link" href="https://www.linkedin.com/in/javiidev" target="_blank"
+                    rel="noopener noreferrer" aria-label="Perfil de LinkedIn de JaviDev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M8 11v5" />
+                        <path d="M8 8v.01" />
+                        <path d="M12 16v-5" />
+                        <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+                        <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+                    </svg>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav"
+                    aria-label="Abrir menú de navegación">
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <!-- ================= MAIN ================= -->
-    <main class="portfolio__main">
+    <main class="main" id="main">
 
-        <!-- ================= ABOUT ================= -->
-        <section id="about" class="main__section section__about">
-            <div class="about__content">
-                <h2 class="section__title">Acerca de mi</h2>
-                <p class="section__text">
-                    Soy un desarrollador web apasionado por crear experiencias digitales atractivas y funcionales.
-                    Con una base sólida en HTML, CSS, JavaScript y SASS, me esfuerzo por mantenerme actualizado con
-                    las últimas tecnologías y tendencias del desarrollo web. Actualmente, estoy ampliando mis
-                    habilidades con TypeScript y Angular para construir aplicaciones más robustas y escalables.
-                </p>
-                <a href="#projects" class="main__btn">Ver Proyectos</a>
-            </div>
+        <!-- ================= HERO / SOBRE MÍ ================= -->
+        <section class="hero" id="about" aria-labelledby="about-title">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <h1 class="hero__title" id="about-title" data-reveal>
+                        Hola, soy <span class="gradient-text">Javier Martínez</span>
+                    </h1>
 
-            <div class="about__image">
-                <img class="section__img" src="./img/javidev.webp" alt="Imagen de JaviDev">
-            </div>
-        </section>
+                    <p class="hero__role" data-reveal>Desarrollador Web Front-End</p>
 
-        <!-- ================= PROJECTS ================= -->
-        <section id="projects" class="main__section section__projects">
-            <h2 class="section__title">Proyectos</h2>
+                    <p class="hero__text" data-reveal>
+                        Creo experiencias digitales atractivas, rápidas y funcionales. Trabajo con HTML, CSS,
+                        JavaScript y SASS, y actualmente amplío mis habilidades con TypeScript y Angular para
+                        construir aplicaciones más robustas y escalables.
+                    </p>
 
-            <a class="secction__link" href="https://theewiick.github.io/To-Do-List" target="_blank">
-                <article class="main__article">
-                    <img class="article__img" src="./img/todolist.webp" alt="">
-                    <div class="article__div">
-                        <h3 class="article__title">To Do List</h3>
-                        <p class="article__text">To Do List con filtro, edición y tema claro/oscuro.</p>
+                    <div class="hero__actions" data-reveal>
+                        <a class="btn btn--primary" href="#projects">
+                            Ver proyectos
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M5 12l14 0" />
+                                <path d="M13 18l6 -6" />
+                                <path d="M13 6l6 6" />
+                            </svg>
+                        </a>
+                        <a class="btn btn--ghost" href="#contact">Hablemos</a>
                     </div>
-                </article>
-            </a>
 
-            <a class="secction__link" href="https://theewiick.github.io/Weather-App/" target="_blank">
-                <article class="main__article">
-                    <img class="article__img" src="./img/weatherapp.webp" alt="">
-                    <div class="article__div">
-                        <h3 class="article__title">Weather App</h3>
-                        <p class="article__text">Weather App con búsqueda de ciudad y visualización de condiciones climáticas.</p>
+                    <ul class="hero__stats" data-reveal>
+                        <li class="stat">
+                            <strong class="stat__value" data-count="4">4</strong>
+                            <span class="stat__label">Proyectos publicados</span>
+                        </li>
+                        <li class="stat">
+                            <strong class="stat__value" data-count="34" data-suffix=" h">34 h</strong>
+                            <span class="stat__label">Formación certificada</span>
+                        </li>
+                        <li class="stat">
+                            <strong class="stat__value" data-count="8">8</strong>
+                            <span class="stat__label">Tecnologías</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hero__media" data-reveal>
+                    <div class="hero__glow" aria-hidden="true"></div>
+                    <div class="hero__photo">
+                        <img class="hero__img" src="./img/javidev.webp"
+                            alt="Retrato de Javier Martínez, desarrollador web front-end" width="1000" height="1333"
+                            fetchpriority="high" decoding="async" />
                     </div>
-                </article>
-            </a>
-
-            <a class="secction__link" href="https://theewiick.github.io/App-Lugares/" target="_blank">
-                <article class="main__article">
-                    <img class="article__img" src="./img/applugares.webp" alt="">
-                    <div class="article__div">
-                        <h3 class="article__title">App Lugares</h3>
-                        <p class="article__text">Plataforma multipágina interactiva para el descubrimiento de destinos turísticos y viajes.</p>
-                    </div>
-                </article>
-            </a>
-        </section>
-
-        <!-- ================= CERTIFICATIONS ================= -->
-        <section id="cert" class="main__section section__projects section__cert">
-            <h2 class="section__title">Certificados</h2>
-
-            <a class="section__link" href="https://ude.my/UC-cc9a7e5c-944a-4a35-9f5f-28624334f17e" target="_blank">
-                <article class="main__article">
-                    <img class="article__img" src="./img/certificado.webp" alt="">
-                    <div class="article__div">
-                        <h3 class="article__title">Certificado Curso</h3>
-                        <p class="article__text">Curso de Victor Robles en Udemy: JavaScript, JSON, Node, TypeScript,
-                            Angular 20, MEAN y Astro +34h</p>
-                    </div>
-                </article>
-            </a>
-        </section>
-
-        
-
-        <!-- ================= SKILLS ================= -->
-        <section id="skills" class="main__section section__skills">
-            <h2 class="section__title">Habilidades</h2>
-
-            <div class="skills__grid">
-                <!-- HTML -->
-                <div class="skill__card">
-                    <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="#e5532d" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
-                        <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
-                    </svg>
-                    <span class="skill__span">HTML</span>
                 </div>
-
-                <!-- CSS -->
-                <div class="skill__card">
-                    <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="#306af1" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
-                        <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
-                    </svg>
-                    <span class="skill__span">CSS</span>
-                </div>
-
-                <!-- SASS -->
-                <div class="skill__card">
-                    <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="#cf6b9d" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M12 10.523c2.46 -.826 4 -.826 4 -2.155c0 -1.366 -1.347 -1.366 -2.735 -1.366c-1.91 0 -3.352 .49 -4.537 1.748c-.848 .902 -1.027 2.449 -.153 3.307c.973 .956 3.206 1.789 2.884 3.493c-.233 1.235 -1.469 1.823 -2.617 1.202c-.782 -.424 -.454 -1.746 .626 -2.512s2.822 -.992 4.1 -.24c.98 .575 1.046 1.724 .434 2.193" />
-                    </svg>
-                    <span class="skill__span">SASS</span>
-                </div>
-
-                <!-- JavaScript -->
-                <div class="skill__card">
-                    <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="#f0dc55" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
-                        <path d="M7.5 8h3v8l-2 -1" />
-                        <path
-                            d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
-                    </svg>
-                    <span class="skill__span">JavaScript</span>
-                </div>
-
-                <!-- TypeScript -->
-                <div class="skill__card">
-                    <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="#377cc8" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M15 17.5c.32 .32 .754 .5 1.207 .5h.543c.69 0 1.25 -.56 1.25 -1.25v-.25a1.5 1.5 0 0 0 -1.5 -1.5a1.5 1.5 0 0 1 -1.5 -1.5v-.25c0 -.69 .56 -1.25 1.25 -1.25h.543c.453 0 .887 .18 1.207 .5" />
-                        <path d="M9 12h4" />
-                        <path d="M11 12v6" />
-                        <path d="M21 19v-14a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2z" />
-                    </svg>
-                    <span class="skill__span">TypeScript</span>
-                </div>
-
-                <!-- Angular -->
-                <div class="skill__card">
-                    <svg class="item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="#f4493c" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M5.428 17.245l6.076 3.471a1 1 0 0 0 .992 0l6.076 -3.471a1 1 0 0 0 .495 -.734l1.323 -9.704a1 1 0 0 0 -.658 -1.078l-7.4 -2.612a1 1 0 0 0 -.665 0l-7.399 2.613a1 1 0 0 0 -.658 1.078l1.323 9.704a1 1 0 0 0 .495 .734z" />
-                        <path d="M9 15l3 -8l3 8" />
-                        <path d="M10 13h4" />
-                    </svg>
-                    <span class="skill__span">Angular</span>
-                </div>
-
-                <!-- Astro -->
-                <div class="skill__card">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="#ee558d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-astro">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M14.972 3.483c.163 .196 .247 .46 .413 .987l3.64 11.53a15.5 15.5 0 0 0 -4.352 -1.42l-2.37 -7.723a.31 .31 0 0 0 -.296 -.213a.31 .31 0 0 0 -.295 .214l-2.342 7.718a15.5 15.5 0 0 0 -4.37 1.422l3.657 -11.53c.168 -.527 .251 -.79 .415 -.986c.144 -.172 .331 -.306 .544 -.388c.242 -.094 .527 -.094 1.099 -.094h2.612c.572 0 .858 0 1.1 .094c.213 .082 .4 .217 .545 .39" />
-                        <path d="M9 18c0 1.5 2 3 3 4c1 -1 3 -3 3 -4q -3 1.5 -6 0" />
-                    </svg>
-                    <span class="skill__span">Astro</span>
-                </div>
-
-                <!-- API -->
-                <div class="skill__card">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-api-app"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" /><path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" /><path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" /><path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" /></svg>
-                    <span class="skill__span">APIS</span>
-                </div>
-
             </div>
         </section>
 
+        <!-- ================= PROYECTOS ================= -->
+        <section class="section section--projects" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <header class="section__head" data-reveal>
+                    <p class="section__eyebrow">01 — Portfolio</p>
+                    <h2 class="section__title" id="projects-title">Proyectos</h2>
+                    <p class="section__subtitle">Una selección de aplicaciones reales publicadas y accesibles online.</p>
+                </header>
+
+                <div class="projects__grid">
+                    <!-- Proyecto 1 -->
+                    <article class="project-card" data-reveal>
+                        <a class="project-card__media" href="https://theewiick.github.io/Pulse-Fitness/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Abrir demo del proyecto Pulse Fitness">
+                            <img class="project-card__img" src="./img/pulsefitness.webp"
+                                alt="Captura de la landing page de Pulse Fitness Studio en modo oscuro" width="1600"
+                                height="900" loading="lazy" decoding="async" />
+                            <span class="project-card__overlay">
+                                Ver demo
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 17l9.5 -9.5" />
+                                    <path d="M7 7h10v10" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Pulse Fitness</h3>
+                            <p class="project-card__text">
+                                Landing dark mode para un gimnasio de Alicante: calculadora de calorías, tarifas
+                                dinámicas y páginas legales con rutas.
+                            </p>
+                            <ul class="tags">
+                                <li class="tag">React</li>
+                                <li class="tag">TypeScript</li>
+                                <li class="tag">Tailwind</li>
+                                <li class="tag">React Router</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card" data-reveal>
+                        <a class="project-card__media" href="https://theewiick.github.io/To-Do-List/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Abrir demo del proyecto To Do List">
+                            <img class="project-card__img" src="./img/todolist.webp"
+                                alt="Captura de la aplicación To Do List con tareas y filtros" width="1072" height="494"
+                                loading="lazy" decoding="async" />
+                            <span class="project-card__overlay">
+                                Ver demo
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 17l9.5 -9.5" />
+                                    <path d="M7 7h10v10" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">To Do List</h3>
+                            <p class="project-card__text">
+                                Gestor de tareas con filtros, edición en línea, tema claro/oscuro y persistencia en
+                                localStorage.
+                            </p>
+                            <ul class="tags">
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                                <li class="tag">localStorage</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card" data-reveal>
+                        <a class="project-card__media" href="https://theewiick.github.io/Weather-App/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Abrir demo del proyecto Weather App">
+                            <img class="project-card__img" src="./img/weatherapp.webp"
+                                alt="Captura de la Weather App mostrando el clima de una ciudad" width="1072" height="494"
+                                loading="lazy" decoding="async" />
+                            <span class="project-card__overlay">
+                                Ver demo
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 17l9.5 -9.5" />
+                                    <path d="M7 7h10v10" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Weather App</h3>
+                            <p class="project-card__text">
+                                Consulta del tiempo en tiempo real: búsqueda por ciudad y visualización de las
+                                condiciones climáticas.
+                            </p>
+                            <ul class="tags">
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                                <li class="tag">REST API</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4 -->
+                    <article class="project-card" data-reveal>
+                        <a class="project-card__media" href="https://theewiick.github.io/App-Lugares/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Abrir demo del proyecto App Lugares">
+                            <img class="project-card__img" src="./img/applugares.webp"
+                                alt="Captura de App Lugares con destinos turísticos" width="1074" height="474"
+                                loading="lazy" decoding="async" />
+                            <span class="project-card__overlay">
+                                Ver demo
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 17l9.5 -9.5" />
+                                    <path d="M7 7h10v10" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">App Lugares</h3>
+                            <p class="project-card__text">
+                                Plataforma multipágina para descubrir destinos turísticos, con SCSS modular y
+                                JavaScript vanilla.
+                            </p>
+                            <ul class="tags">
+                                <li class="tag">HTML</li>
+                                <li class="tag">SCSS</li>
+                                <li class="tag">JavaScript</li>
+                                <li class="tag">Multi-page</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CERTIFICADOS ================= -->
+        <section class="section section--cert" id="cert" aria-labelledby="cert-title">
+            <div class="container">
+                <header class="section__head" data-reveal>
+                    <p class="section__eyebrow">02 — Formación</p>
+                    <h2 class="section__title" id="cert-title">Certificados</h2>
+                </header>
+
+                <a class="cert-card" href="https://ude.my/UC-cc9a7e5c-944a-4a35-9f5f-28624334f17e" target="_blank"
+                    rel="noopener noreferrer" data-reveal>
+                    <div class="cert-card__media">
+                        <img class="cert-card__img" src="./img/certificado.webp"
+                            alt="Certificado de Udemy del Master en JavaScript 2025" width="1200" height="893"
+                            loading="lazy" decoding="async" />
+                    </div>
+                    <div class="cert-card__body">
+                        <span class="badge">Udemy · 34 horas</span>
+                        <h3 class="cert-card__title">Master en JavaScript 2025</h3>
+                        <p class="cert-card__text">
+                            Curso de Víctor Robles: JavaScript, JSON, Node, TypeScript, Angular 20, MEAN y Astro.
+                        </p>
+                        <span class="cert-card__link">
+                            Ver certificado
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M7 17l9.5 -9.5" />
+                                <path d="M7 7h10v10" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ================= HABILIDADES ================= -->
+        <section class="section section--skills" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <header class="section__head" data-reveal>
+                    <p class="section__eyebrow">03 — Stack</p>
+                    <h2 class="section__title" id="skills-title">Habilidades</h2>
+                    <p class="section__subtitle">Las herramientas con las que construyo mis proyectos.</p>
+                </header>
+
+                <div class="skills__group" data-reveal>
+                    <h3 class="skills__group-title">Lenguajes y frameworks</h3>
+                    <ul class="skills__grid">
+                        <li class="skill" style="--skill-color: #e5532d">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                                <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                            </svg>
+                            <span class="skill__name">HTML</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #306af1">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                                <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                            </svg>
+                            <span class="skill__name">CSS</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #cf6b9d">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 10.523c2.46 -.826 4 -.826 4 -2.155c0 -1.366 -1.347 -1.366 -2.735 -1.366c-1.91 0 -3.352 .49 -4.537 1.748c-.848 .902 -1.027 2.449 -.153 3.307c.973 .956 3.206 1.789 2.884 3.493c-.233 1.235 -1.469 1.823 -2.617 1.202c-.782 -.424 -.454 -1.746 .626 -2.512s2.822 -.992 4.1 -.24c.98 .575 1.046 1.724 .434 2.193" />
+                            </svg>
+                            <span class="skill__name">SASS</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #f0dc55">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                                <path d="M7.5 8h3v8l-2 -1" />
+                                <path
+                                    d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                            </svg>
+                            <span class="skill__name">JavaScript</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #4a9eff">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M15 17.5c.32 .32 .754 .5 1.207 .5h.543c.69 0 1.25 -.56 1.25 -1.25v-.25a1.5 1.5 0 0 0 -1.5 -1.5a1.5 1.5 0 0 1 -1.5 -1.5v-.25c0 -.69 .56 -1.25 1.25 -1.25h.543c.453 0 .887 .18 1.207 .5" />
+                                <path d="M9 12h4" />
+                                <path d="M11 12v6" />
+                                <path d="M21 19v-14a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2z" />
+                            </svg>
+                            <span class="skill__name">TypeScript</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #f4493c">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M5.428 17.245l6.076 3.471a1 1 0 0 0 .992 0l6.076 -3.471a1 1 0 0 0 .495 -.734l1.323 -9.704a1 1 0 0 0 -.658 -1.078l-7.4 -2.612a1 1 0 0 0 -.665 0l-7.399 2.613a1 1 0 0 0 -.658 1.078l1.323 9.704a1 1 0 0 0 .495 .734z" />
+                                <path d="M9 15l3 -8l3 8" />
+                                <path d="M10 13h4" />
+                            </svg>
+                            <span class="skill__name">Angular</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #ee558d">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M14.972 3.483c.163 .196 .247 .46 .413 .987l3.64 11.53a15.5 15.5 0 0 0 -4.352 -1.42l-2.37 -7.723a.31 .31 0 0 0 -.296 -.213a.31 .31 0 0 0 -.295 .214l-2.342 7.718a15.5 15.5 0 0 0 -4.37 1.422l3.657 -11.53c.168 -.527 .251 -.79 .415 -.986c.144 -.172 .331 -.306 .544 -.388c.242 -.094 .527 -.094 1.099 -.094h2.612c.572 0 .858 0 1.1 .094c.213 .082 .4 .217 .545 .39" />
+                                <path d="M9 18c0 1.5 2 3 3 4c1 -1 3 -3 3 -4q -3 1.5 -6 0" />
+                            </svg>
+                            <span class="skill__name">Astro</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #22d3ee">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
+                                <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
+                                <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
+                                <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" />
+                            </svg>
+                            <span class="skill__name">REST APIs</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills__group" data-reveal>
+                    <h3 class="skills__group-title">Herramientas y flujo de trabajo</h3>
+                    <ul class="skills__grid">
+                        <li class="skill" style="--skill-color: #f05033">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M12 15v-6" />
+                                <path d="M15 11l-2 -2" />
+                                <path d="M11 7l-1.9 -1.9" />
+                                <path d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" />
+                            </svg>
+                            <span class="skill__name">Git</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #c9d1d9">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                            <span class="skill__name">GitHub</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #3ba3f0">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M16 3v4" />
+                                <path d="M8 3v4" />
+                                <path d="M4 11h16" />
+                                <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                <path d="M8 15h.01" />
+                                <path d="M12 15h.01" />
+                                <path d="M16 15h.01" />
+                            </svg>
+                            <span class="skill__name">VS Code</span>
+                        </li>
+                        <li class="skill" style="--skill-color: #4ade80">
+                            <svg class="skill__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
+                                <path d="M7 20h10" />
+                                <path d="M9 16v4" />
+                                <path d="M15 16v4" />
+                                <path d="M7 8h4" />
+                                <path d="M13 8h2" />
+                            </svg>
+                            <span class="skill__name">Responsive</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACTO ================= -->
+        <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-card" data-reveal>
+                    <p class="section__eyebrow">04 — Contacto</p>
+                    <h2 class="section__title" id="contact-title">¿Trabajamos juntos?</h2>
+                    <p class="contact-card__text">
+                        Estoy abierto a oportunidades laborales y proyectos freelance. Si te gusta lo que ves,
+                        escríbeme y hablamos.
+                    </p>
+
+                    <div class="contact-card__actions">
+                        <a class="btn btn--primary" href="mailto:javiimartinez05@gmail.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                                <path d="M3 7l9 6l9 -6" />
+                            </svg>
+                            Enviar email
+                        </a>
+                        <a class="btn btn--ghost" href="tel:+34633027687">+34 633 02 76 87</a>
+                    </div>
+
+                    <ul class="contact-card__social">
+                        <li>
+                            <a class="chip-link" href="https://github.com/TheeWiick" target="_blank"
+                                rel="noopener noreferrer">GitHub</a>
+                        </li>
+                        <li>
+                            <a class="chip-link" href="https://www.linkedin.com/in/javiidev" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- ================= FOOTER ================= -->
-    <footer class="portfolio__footer">
-        <div class="footer__social">
-            <a class="social__link" href="https://github.com/TheeWiick" target="_blank" aria-label="GitHub">
-                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                </svg>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <a class="brand brand--footer" href="#top" aria-label="JaviDev — volver al inicio">
+                <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+                <span class="brand__text">Javi<span class="brand__accent">Dev</span></span>
             </a>
 
-            <a class="social__link" href="https://www.linkedin.com/in/javiidev" target="_blank" aria-label="LinkedIn">
-                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M8 11v5" />
-                    <path d="M8 8v.01" />
-                    <path d="M12 16v-5" />
-                    <path d="M16 16v-3a2 2 0 1 0 -4 0" />
-                    <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
-                </svg>
-            </a>
-            <a class="social__link" href="mailto:javiimartinez05@gmail.com" target="_blank" aria-label="Email">
-                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                    <path d="M3 7l9 6l9 -6" />
-                </svg>
-            </a>
-            <a class="social__link" href="tel:+34633027687" target="_blank" aria-label="Phone">
-                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                </svg>
-            </a>
+            <small class="site-footer__copy">
+                &copy; <span id="year">2026</span> JaviDev. Todos los derechos reservados.
+            </small>
         </div>
-        <small class="footer__small">&copy; 2026 JaviDev. Todos los derechos reservados.</small>
     </footer>
+
+    <script src="./script.js" defer></script>
 </body>
 
 </html>
